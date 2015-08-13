@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Este es un html de prueba para insertar notas en la base de datos
+-->
+<html>
+    <head>
+        <title>Insert de pruebas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+        <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
+    </head>
+    <body>
+        <div class="container">
+            <div class="span-19 prepend-3 append-2">
+                <div class="span-19 last"><h3>Prueba Inserción</h3></div>
+
+                <div class="span-19 last">
+                    <form action="nuevanota.php" method="post"> 
+                        <h3>Titulo</h3>
+                        <input type="text" maxlength="50" name="cTitulo" size="50">
+                        <h3>Nota</h3>
+                        <textarea ng-model="message" maxlength="500" cols="40" name="cNota" rows="10"></textarea>
+                        <input type="submit" value="Guardar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
