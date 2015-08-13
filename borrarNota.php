@@ -16,7 +16,7 @@ $query =sprintf("DELETE FROM tb_notas WHERE tb_Usuarios_id_Usuario='%s' and id_n
         mysql_real_escape_string($_SESSION['id_usr']),
         mysql_real_escape_string($_SESSION['idNota']));
 
-//echo $query;
+//echo $query;//comment
 mysql_query($query)or die('Error, en la inserción de la nota. ' . mysql_error().' el query es: '.$query);
 
 echo "Nota borrada exitosamente";
